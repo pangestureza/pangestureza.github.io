@@ -130,9 +130,9 @@
 
         const hasData = [kodeSP, namaBarang, Pemakaian, fotoLink].some(val => val !== "");
 
-        const kodeSPVal = kodeSP || (hasData ? '<span class="text-belum-ada">Belum ada data</span>' : "");
-        const namaBarangVal = namaBarang || (hasData ? '<span class="text-belum-ada">Belum ada data</span>' : "");
-        const PemakaianVal = Pemakaian || (hasData ? '<span class="text-belum-ada">Belum ada data</span>' : "");
+        const kodeSPVal = kodeSP || (hasData ? '<span class="text-belum-ada">-</span>' : "");
+        const namaBarangVal = namaBarang || (hasData ? '<span class="text-belum-ada">-</span>' : "");
+        const PemakaianVal = Pemakaian || (hasData ? '<span class="text-belum-ada">+</span>' : "");
 
         let fotoHTML;
         if (!fotoLink && hasData) {
